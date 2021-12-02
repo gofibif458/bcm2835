@@ -27,10 +27,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          apt update
-          apt upgrade
-          apt install -y git bc bison flex libssl-dev make libc6-dev libncurses5-dev wget curl
-          apt install -y crossbuild-essential-armhf
+          sudo apt update
+          sudo apt upgrade
+          sudo apt install -y git bc bison flex libssl-dev make libc6-dev libncurses5-dev wget curl
+          sudo apt install -y crossbuild-essential-armhf
           wget https://github.com/raspberrypi/linux/archive/refs/tags/stable_20211118.zip
           unzip stable_20211118.zip
           cd linux
